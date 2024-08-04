@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    body {
+        min-height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        height: 100vh;
+    }
+}
