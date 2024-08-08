@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+         <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33J01HL1X8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-33J01HL1X8');
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="feedassets/index.css">
         <link rel="stylesheet" href="feedassets/mediaqueries.css">
@@ -13,6 +21,7 @@
     <body>
         <div class="container">
             <h1>Tube Feed Rate Calculator</h1>
+            <link rel="icon" type="icon" href="/feedassets/calcicon.png">
             <p class="instructions">Enter any two pieces of information and click "Feed Me."</p>
 
             <div class="calculator">
@@ -27,9 +36,9 @@
                     <input id="milperhour" type="text" name="milperhour" placeholder="mL per one hour" />
                 </form>
             </div>
-                <button id="btn" type="submit">FEEEEED ME</button>
+                <button id="btn" type="button">FEEEEED ME</button>
                 <br>
-                <button id="resetButton" type="button" onclick="reset()">RESET</button>
+                <button id="resetButton" type="button">RESET</button>
 
                 <p class="copyright">Copyright 2024, Roxana Rodriguez-Becker</p>
             

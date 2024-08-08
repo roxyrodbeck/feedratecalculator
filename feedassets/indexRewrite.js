@@ -1,11 +1,9 @@
-let mil = document.getElementById("milliliters");
-let hour = document.getElementById("hours");
-let milPerHour = document.getElementById("milperhour");
+
 
 function reset() {
-    mil.value = ""
-    hour.value = "";
-    milPerHour.value = "";
+    document.getElementById("milliliters").value = ""
+    document.getElementById("hours").value = "";
+    document.getElementById("milperhour").value = "";
 }
 
 document.getElementById("resetButton").addEventListener('click', reset)
