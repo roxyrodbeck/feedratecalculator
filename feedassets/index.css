@@ -1,14 +1,14 @@
 :root {
     --background: 174, 174, 174;
-    --red: 255, 97, 51;
-    --light-gray: 238, 238, 238;
+    --purple: 186,81, 155;
+    --light-gray: 242, 242, 242;
     --dark-gray: 68, 68, 67;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: rgba(var(--red));
+    background-color: rgba(var(--purple));
 }
 
 body {
@@ -51,6 +51,7 @@ form {
 
 label {
     padding: 0.2em 0 0 0.2em;
+    margin-left: 0.4em;
     text-align: left;
     float: left;
     font-size: 17px;
@@ -64,13 +65,14 @@ input {
 
 input::placeholder {
     font-size: 15px;
+    color: black;
 }
 
 .calculator {
     margin: 2em;
     min-width: 200px;
     min-height: 175px;
-    background-image: linear-gradient(to right, rgba(var(--light-gray)), rgba(var(--red)));
+    background-image: linear-gradient(to right, rgba(var(--light-gray)), rgba(var(--purple)));
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid black;
@@ -83,8 +85,10 @@ input::placeholder {
 }
 
 h1 {
-    color: black;
-    text-shadow: #FC0 1px 0 3px;
+    color: rgba(var(--light-gray));
+    border: 1px #FC0 solid;
+    background-color: rgba(var(--dark-gray), 0.4);
+    padding: 5px;
 }
 
 button {
@@ -94,8 +98,8 @@ button {
     height: 2.6em;
     width: 8em;
     font-size: 13px;
-    background-color: rgba(var(--red), 0.9);
-    color: rgba(var(--dark-gray));
+    background-color: rgba(var(--purple), 0.9);
+    color: rgba(var(--light-gray));
     border-radius: 5em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }

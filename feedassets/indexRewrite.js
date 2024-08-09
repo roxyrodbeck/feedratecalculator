@@ -27,7 +27,7 @@ function feedRate() {
                         answerMil = milPerHour * hour;
                         return document.getElementById("milliliters").value = `${answerMil.toFixed(2)} mL`;
                     } else {
-                        return alert("please enter valid number");
+                        return alert("Please enter valid number.");
                     }
                 }
             }
