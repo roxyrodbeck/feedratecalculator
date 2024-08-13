@@ -10,26 +10,43 @@ function reset() {
 
 document.getElementById("resetButton").addEventListener('click', reset)
 
+function milliOutputColor() {
+    let milliColor = document.getElementById("milliliters");
+     return milliColor.style.color = "#ba0000";
+}
+
+function hoursOutputColor() {
+    let hoursColor = document.getElementById("hours");
+    return hoursColor.style.color = "#ba0000";
+}
+
+function milPerHourColor() {
+    let milPerHourColor = document.getElementById("milperhour");
+    return milPerHourColor.style.color= "#ba0000";
+}
+
 function feedRate() {
 
     let mil = parseFloat(document.getElementById("milliliters").value);
     let hour = parseFloat(document.getElementById("hours").value);
     let milPerHour = parseFloat(document.getElementById("milperhour").value);
 
-
             if (mil > 0 && hour > 0) {
                 answerMilPerHour = mil / hour;
+                milPerHourColor()
                 return document.getElementById("milperhour").value = `${answerMilPerHour.toFixed(2)} mL/hour`;
             } else {
                 if (mil > 0) {
                     answerHour = mil / milPerHour;
+                    hoursOutputColor()
                     return document.getElementById("hours").value = `${answerHour.toFixed(2)} hours`;
                 } else {
                     if (hour > 0) {
                         answerMil = milPerHour * hour;
+                        milliOutputColor()
                         return document.getElementById("milliliters").value = `${answerMil.toFixed(2)} mL`;
                     } else {
-                        return alert("please enter valid number");
+                        return alert("Please enter valid number.");
                     }
                 }
             }
