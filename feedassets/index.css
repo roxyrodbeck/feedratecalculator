@@ -50,11 +50,11 @@ form {
 }
 
 label {
-    padding: 0.2em 0 0 0.2em;
-    margin-left: 0.4em;
+    padding: 0.2em 0 0 0;
+    margin: 0.4em;
     text-align: left;
     float: left;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -73,7 +73,7 @@ input::placeholder {
     min-width: 200px;
     min-height: 175px;
     background-image: linear-gradient(to right, rgba(var(--light-gray)), rgba(var(--purple)));
-    padding: 0.5em;
+    padding: 0 1em 1em 1em;
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -90,6 +90,40 @@ h1 {
     background-color: rgba(var(--dark-gray), 0.4);
     padding: 5px;
 }
+
+label > a {
+    text-decoration: none;
+    color: rgba(var(--dark-gray));
+    transition: transform .2s;
+}
+
+/* 
+.extra-info {
+    display: none;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.info:hover .extra-info {
+    display: block;
+  }
+
+.info {
+    font-size: 20px;
+    padding-left: 5px;
+    width: 100px;
+    border-radius: 15px;
+  }
+  
+.info:hover {
+    background-color: white;
+    padding: 0 0 0 5px;
+    width: 315px;
+    text-align: left !important;
+  } */
 
 button {
     border: 1px solid #FC0;
