@@ -19,34 +19,36 @@
         <title>Tube Feed Rate Calculator</title>
     </head>
     <body>
-        <div class="container">
+        <section class="container">
             <h1>Tube Feed Rate Calculator</h1>
             <link rel="icon" type="icon" href="/feedassets/calcicon.png">
             <p class="instructions">Enter any two pieces of information and click "Feed Me."</p>
 
-            <div class="calculator">
+            <section class="calculator">
                 <form>
-                    
-                    <label for="milliliters">Total milliliters:</label>
-                    <input id="milliliters" type="text" name="mil" placeholder="How many mL total?" />
-                    
 
-                    <label for="hours">Total hours:</label>
+                    <label for="milliliters"><a href="#" id="milli-info" onclick="milliInfo()">&#9432
+                    </a> Total milliliters:</label>
+                    <input id="milliliters" type="text" name="mil" placeholder="How many mL total?" />
+
+                    <label for="hours"><a href="#" id="hours-info" onclick="hoursInfo()">&#9432
+                    </a> Total hours:</label>
                     <input id="hours" type="text" name="milperhour" placeholder="Over how many hours?" />
                     
-                    
-                    <label for="milperhour">Feed rate:</label>
+                    <label for="milperhour"><a href="#" id="milperhour-info" onclick="milPerHourInfo()">&#9432
+                    </a> Feed rate:</label>
                     <input id="milperhour" type="text" name="milperhour" placeholder="ML per one hour" />
                     
                 </form>
-            </div>
+            </section>
+
                 <button id="btn" type="button">FEEEEED ME</button>
                 <br>
                 <button id="resetButton" type="button">RESET</button>
 
                 <p class="copyright">Copyright 2024, Roxana Rodriguez-Becker</p>
             
-        </div>
+        </section>
         <script src="feedassets/index.js"></script>
     </body>
 </html>
