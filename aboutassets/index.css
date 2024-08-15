@@ -22,6 +22,17 @@ body {
     font-family: "Karla", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#image {
+    width: 30%;
+    float: left;
+}
+
+.class {
+    width: 70%;
+    float: right;
+}
+
+
 img {
     float: left;
     height: 400px;

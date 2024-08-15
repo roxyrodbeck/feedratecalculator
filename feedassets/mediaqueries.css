@@ -6,17 +6,14 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        background-image: url("feed-setup.jpg");
-    background-size: cover;
-    background-position: center;
     }
 
     .container {
         height: 100vh;
     }
-
+    
     .calculator {
         width: fit-content;
     }
-
-}
+    }
+    
