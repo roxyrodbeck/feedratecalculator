@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+    #about-app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-app {
+        display: block;
+            
+        }
+
+    #seb {
+        width: 60vw;
+        height: auto;
+
+    }
+
+    .text {
+        width: 80vw;
+        text-wrap: wrap;
+        margin-left: -35px;
+    }
+}
