@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, rgb(165, 164, 165), rgb(88, 85, 87))
+    background: linear-gradient(to right, rgb(165, 164, 165), rgb(88, 85, 87));
 }
 
 #about-app {
@@ -13,12 +13,18 @@ body {
     width: 90%;
 }
 
+a {
+    color: white;
+}
+
 #image {
     width: 40%;
+    margin-right: -20px;
 }
 
 .text {
     width: 60%;
+    margin-left: -20px;
 }
 
 #text {
