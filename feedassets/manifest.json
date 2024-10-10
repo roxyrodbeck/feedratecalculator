@@ -1,0 +1,24 @@
+{
+    "name": "Tube Feed Rate Calculator",
+    "short_name": "TubeFeedRate",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "description": "A web application to calculate tube feed rates for individuals with specific dietary needs.",
+    "icons": [
+      {
+        "src": "feedassets/favicon/favicon.ico",
+        "sizes": "200x200",
+        "type": "image/png"
+      },
+      {
+        "src": "feedassets/favicon/web-app-manifest-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "orientation": "portrait"
+  }
+  
