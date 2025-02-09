@@ -34,16 +34,24 @@
             <section class="calculator">
                 <form>
 
-                    <label for="milliliters"><a href="" id="milli-info" onclick="milliInfo()">&#9432
-                    </a> Total milliliters:</label>
+                    <div class="input-title-text">
+                        <span id="milli-info">&#9432
+                        <span class="tooltip">Input the total milliliters required of this feed. Leave blank if this is the information you are solving for.</span>
+                      </span>
+                    Total milliliters:</div>
                     <input id="milliliters" type="text" name="mil" placeholder="How many mL total?" />
 
-                    <label for="hours"><a href="" id="hours-info" onclick="hoursInfo()">&#9432
-                    </a> Total hours:</label>
+                    <div class="input-title-text">
+                        <span id="hours-info">&#9432
+                        <span class="tooltip">Input the total hours the feed should run. Convert minutes into a decimal by dividing total minutes by 60. For example, 45 minutes / 60 minutes = 0.75 hour. Leave blank if this is the information you are solving for.</span>
+                      </span>
+                    Total hours:</div>
                     <input id="hours" type="text" name="milperhour" placeholder="Over how many hours?" />
                     
-                    <label for="milperhour"><a href="" id="milperhour-info" onclick="milPerHourInfo()">&#9432
-                    </a> Feed rate:</label>
+                    <div class="input-title-text"> <span id="milperhour">&#9432
+                        <span class="tooltip">Simply input the millilters, the one hour is already configured. Leave blank if this is the information you are solving for.</span>
+                      </span>
+                    Feed rate:</div>
                     <input id="milperhour" type="text" name="milperhour" placeholder="ML per one hour" />
                     
                 </form>

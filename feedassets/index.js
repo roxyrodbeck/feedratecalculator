@@ -1,20 +1,20 @@
-function milliInfo() {
-    let millilitersInfo = document.getElementById("milli-info");
-    alert("Input the total milliliters required of this feed. Leave blank if this is the information you are solving for.")
+// function milliInfo() {
+//     let millilitersInfo = document.getElementById("milli-info");
+//     alert("Input the total milliliters required of this feed. Leave blank if this is the information you are solving for.")
 
-}
+// }
 
-function hoursInfo() {
-    let hoursInfo = document.getElementById("hours-info");
-    alert("Input the total hours the feed should run. Convert minutes into a decimal by dividing total minutes by 60. For example, 45 minutes / 60 minutes = 0.75 hour. Leave blank if this is the information you are solving for.")
+// function hoursInfo() {
+//     let hoursInfo = document.getElementById("hours-info");
+//     alert("Input the total hours the feed should run. Convert minutes into a decimal by dividing total minutes by 60. For example, 45 minutes / 60 minutes = 0.75 hour. Leave blank if this is the information you are solving for.")
 
-}
+// }
 
-function milPerHourInfo() {
-    let milPerHourInfo = document.getElementById("milPerHour-info");
-    alert("Simply input the millilters, the one hour is already configured. Leave blank if this is the information you are solving for.")
+// function milPerHourInfo() {
+//     let milPerHourInfo = document.getElementById("milPerHour-info");
+//     alert("Simply input the millilters, the one hour is already configured. Leave blank if this is the information you are solving for.")
 
-}
+// }
 
 function reset() {
     let mil = document.getElementById("milliliters");

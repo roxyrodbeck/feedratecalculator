@@ -147,3 +147,41 @@ button:hover {
     text-shadow: #FC0 1px 0 10px;
 }
 
+#milli-info, #hours-info, #milperhour {
+    position: relative;
+    display: inline-block;
+}
+
+#milli-info > .tooltip, 
+#hours-info > .tooltip, 
+#milperhour > .tooltip  {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    width: 250px;
+    height: auto;
+    font-size: 13px;
+    text-align: start;
+    padding: 15px 20px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#milli-info:hover > .tooltip, 
+#hours-info:hover > .tooltip, 
+#milperhour:hover > .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.input-title-text {
+    font-size: 15px;
+    text-align:start;
+    padding: 3px;
+}
