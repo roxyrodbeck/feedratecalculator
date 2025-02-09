@@ -168,7 +168,7 @@ button:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-17%);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -184,4 +184,5 @@ button:hover {
     font-size: 15px;
     text-align:start;
     padding: 3px;
+    margin-top: .5em;
 }
