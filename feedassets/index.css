@@ -170,14 +170,14 @@ button:hover {
     text-shadow: #FC0 1px 0 10px;
 }
 
-#milli-info, #hours-info, #milperhour {
+#milli-info, #hours-info, #milperhour-info {
     position: relative;
     display: inline-block;
 }
 
 #milli-info > .tooltip, 
 #hours-info > .tooltip, 
-#milperhour > .tooltip  {
+#milperhour-info > .tooltip  {
     visibility: hidden;
     background-color: black;
     color: #fff;
@@ -198,7 +198,7 @@ button:hover {
 
 #milli-info:hover > .tooltip, 
 #hours-info:hover > .tooltip, 
-#milperhour:hover > .tooltip {
+#milperhour-info:hover > .tooltip {
     visibility: visible;
     opacity: 1;
 }
@@ -208,17 +208,4 @@ button:hover {
     text-align:start;
     padding: 3px;
     margin-top: .5em;
-}
-
-@media screen and (max-width: 800px) {
-    .background-rectangle {
-        background-color: rgba(0,0,0,0);
-    } 
-}
-
-@media screen and (max-height: 800px) {
-    .background-rectangle {
-        background-color: rgba(0,0,0,0);
-    } 
-
 }

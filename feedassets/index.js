@@ -42,18 +42,18 @@ function feedRate() {
 
             if (mil > 0 && hour > 0) {
                 answerMilPerHour = mil / hour;
+                document.getElementById("milperhour").value = `${answerMilPerHour.toFixed(2)} mL/hour`;
                 milPerHourColor()
-                return document.getElementById("milperhour").value = `${answerMilPerHour.toFixed(2)} mL/hour`;
             } else {
                 if (mil > 0) {
                     answerHour = mil / milPerHour;
+                    document.getElementById("hours").value = `${answerHour.toFixed(2)} hours`;
                     hoursOutputColor()
-                    return document.getElementById("hours").value = `${answerHour.toFixed(2)} hours`;
                 } else {
                     if (hour > 0) {
                         answerMil = milPerHour * hour;
+                        document.getElementById("milliliters").value = `${answerMil.toFixed(2)} mL`;
                         milliOutputColor()
-                        return document.getElementById("milliliters").value = `${answerMil.toFixed(2)} mL`;
                     } else {
                         return alert("Please enter valid number.");
                     }
@@ -64,6 +64,6 @@ function feedRate() {
 document.getElementById("btn").addEventListener('click', feedRate);
 
 if ("serviceWorker" in navigator) {
-    // register service worker
+ 
     navigator.serviceWorker.register("service-worker.js");
   }
