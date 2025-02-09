@@ -107,22 +107,37 @@ label > a {
 }
 
 button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     border: 1px solid #FC0;
-    margin-bottom: 10px;
-    padding: 5px;
+    text-align: center;
     height: 2.6em;
     width: 8em;
-    font-size: 13px;
     background-color: rgba(var(--purple), 0.9);
     color: rgba(var(--light-gray));
     border-radius: 5em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+#btn, #resetButton {
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0.3em;
+}
+
+#btn {
+    margin-bottom: 1em;
+}
+
 #resetButton {
+    text-align: center;
     height: 2em;
-    width: 5em;
-    margin: 1em 0 1em 0;
+    width: 5.5em;
 }
 
 button:hover {
