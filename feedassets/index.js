@@ -1,5 +1,12 @@
 
 
+const toggleButton = document.getElementById('darkModeToggle');
+const bodyElement = document.body;
+
+toggleButton.addEventListener('click', () => {
+    bodyElement.classList.toggle('dark-mode');
+});
+
 function reset() {
     let mil = document.getElementById("milliliters");
     let hour = document.getElementById("hours");
